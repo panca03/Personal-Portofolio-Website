@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001f;
+
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+
+  --font-outfit: 'Outfit', sans-serif;
+  --font-ovo: 'Ovo', serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@utility grid-cols-auto {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
