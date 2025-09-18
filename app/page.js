@@ -6,7 +6,8 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Project from './components/Project';
-import Services from './components/Services';
+import Experience from './components/Experience';
+import CursorEffect from './components/CursorEffect';
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -35,10 +36,11 @@ export default function Home() {
 
   return (
     <>
+      {/* <CursorEffect /> */}
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
-      <Services isDarkMode={isDarkMode} />
+      <Experience isDarkMode={isDarkMode} />
       <Project isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
