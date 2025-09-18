@@ -14,6 +14,9 @@ const ovo = Ovo({
 export const metadata = {
   title: 'Panca Wiguna Sitanggang - Portfolio',
   description: '',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
